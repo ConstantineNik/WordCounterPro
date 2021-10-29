@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80E4051F272C6AF000B58EC0 /* WorldCounterProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4051E272C6AF000B58EC0 /* WorldCounterProApp.swift */; };
-		80E40521272C6AF000B58EC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E40520272C6AF000B58EC0 /* ContentView.swift */; };
+		80E4051F272C6AF000B58EC0 /* WordCounterProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4051E272C6AF000B58EC0 /* WordCounterProApp.swift */; };
 		80E40523272C6AF300B58EC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E40522272C6AF300B58EC0 /* Assets.xcassets */; };
 		80E40526272C6AF300B58EC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80E40525272C6AF300B58EC0 /* Preview Assets.xcassets */; };
+		80E40531272C748800B58EC0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E40530272C748800B58EC0 /* HomeViewModel.swift */; };
+		80E40533272C749700B58EC0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E40532272C749700B58EC0 /* HomeView.swift */; };
+		80E40535272C754200B58EC0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E40534272C754200B58EC0 /* APIManager.swift */; };
+		80E40539272C81E800B58EC0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E40538272C81E800B58EC0 /* NetworkError.swift */; };
+		80E4053B272C867B00B58EC0 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4053A272C867B00B58EC0 /* HTMLParser.swift */; };
+		80E4053E272C8D7500B58EC0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4053D272C8D7500B58EC0 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		80E4051B272C6AF000B58EC0 /* WorldCounterPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldCounterPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		80E4051E272C6AF000B58EC0 /* WorldCounterProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCounterProApp.swift; sourceTree = "<group>"; };
-		80E40520272C6AF000B58EC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80E4051B272C6AF000B58EC0 /* WordCounterPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCounterPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E4051E272C6AF000B58EC0 /* WordCounterProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCounterProApp.swift; sourceTree = "<group>"; };
 		80E40522272C6AF300B58EC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80E40525272C6AF300B58EC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80E40530272C748800B58EC0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		80E40532272C749700B58EC0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		80E40534272C754200B58EC0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		80E40538272C81E800B58EC0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		80E4053A272C867B00B58EC0 /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		80E4053D272C8D7500B58EC0 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +45,7 @@
 		80E40512272C6AF000B58EC0 = {
 			isa = PBXGroup;
 			children = (
-				80E4051D272C6AF000B58EC0 /* WorldCounterPro */,
+				80E4051D272C6AF000B58EC0 /* WordCounterPro */,
 				80E4051C272C6AF000B58EC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +53,23 @@
 		80E4051C272C6AF000B58EC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80E4051B272C6AF000B58EC0 /* WorldCounterPro.app */,
+				80E4051B272C6AF000B58EC0 /* WordCounterPro.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		80E4051D272C6AF000B58EC0 /* WorldCounterPro */ = {
+		80E4051D272C6AF000B58EC0 /* WordCounterPro */ = {
 			isa = PBXGroup;
 			children = (
-				80E4051E272C6AF000B58EC0 /* WorldCounterProApp.swift */,
-				80E40520272C6AF000B58EC0 /* ContentView.swift */,
+				80E4052C272C73FA00B58EC0 /* Services */,
+				80E4052D272C740200B58EC0 /* Models */,
+				80E4052E272C740900B58EC0 /* Views */,
+				80E4052F272C740F00B58EC0 /* ViewModels */,
+				80E4051E272C6AF000B58EC0 /* WordCounterProApp.swift */,
 				80E40522272C6AF300B58EC0 /* Assets.xcassets */,
 				80E40524272C6AF300B58EC0 /* Preview Content */,
 			);
-			path = WorldCounterPro;
+			path = WordCounterPro;
 			sourceTree = "<group>";
 		};
 		80E40524272C6AF300B58EC0 /* Preview Content */ = {
@@ -67,12 +80,70 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		80E4052C272C73FA00B58EC0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				80E4053C272C8D6000B58EC0 /* Extensions */,
+				80E40537272C81CC00B58EC0 /* Network */,
+				80E4053A272C867B00B58EC0 /* HTMLParser.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		80E4052D272C740200B58EC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80E4052E272C740900B58EC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80E40532272C749700B58EC0 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80E4052F272C740F00B58EC0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				80E40530272C748800B58EC0 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		80E40536272C81BA00B58EC0 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				80E40538272C81E800B58EC0 /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		80E40537272C81CC00B58EC0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				80E40536272C81BA00B58EC0 /* Errors */,
+				80E40534272C754200B58EC0 /* APIManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		80E4053C272C8D6000B58EC0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80E4053D272C8D7500B58EC0 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		80E4051A272C6AF000B58EC0 /* WorldCounterPro */ = {
+		80E4051A272C6AF000B58EC0 /* WordCounterPro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80E40529272C6AF300B58EC0 /* Build configuration list for PBXNativeTarget "WorldCounterPro" */;
+			buildConfigurationList = 80E40529272C6AF300B58EC0 /* Build configuration list for PBXNativeTarget "WordCounterPro" */;
 			buildPhases = (
 				80E40517272C6AF000B58EC0 /* Sources */,
 				80E40518272C6AF000B58EC0 /* Frameworks */,
@@ -82,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = WorldCounterPro;
+			name = WordCounterPro;
 			productName = WorldCounterPro;
-			productReference = 80E4051B272C6AF000B58EC0 /* WorldCounterPro.app */;
+			productReference = 80E4051B272C6AF000B58EC0 /* WordCounterPro.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 80E40516272C6AF000B58EC0 /* Build configuration list for PBXProject "WorldCounterPro" */;
+			buildConfigurationList = 80E40516272C6AF000B58EC0 /* Build configuration list for PBXProject "WordCounterPro" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +186,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80E4051A272C6AF000B58EC0 /* WorldCounterPro */,
+				80E4051A272C6AF000B58EC0 /* WordCounterPro */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80E40521272C6AF000B58EC0 /* ContentView.swift in Sources */,
-				80E4051F272C6AF000B58EC0 /* WorldCounterProApp.swift in Sources */,
+				80E40535272C754200B58EC0 /* APIManager.swift in Sources */,
+				80E4053E272C8D7500B58EC0 /* String+Extensions.swift in Sources */,
+				80E40533272C749700B58EC0 /* HomeView.swift in Sources */,
+				80E40531272C748800B58EC0 /* HomeViewModel.swift in Sources */,
+				80E4053B272C867B00B58EC0 /* HTMLParser.swift in Sources */,
+				80E4051F272C6AF000B58EC0 /* WordCounterProApp.swift in Sources */,
+				80E40539272C81E800B58EC0 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WorldCounterPro/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WordCounterPro/Preview Content\"";
 				DEVELOPMENT_TEAM = M4NBPP9456;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -283,8 +359,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kn.WorldCounterPro;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kn.WordCounterPro;
+				PRODUCT_NAME = WordCounterPro;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WorldCounterPro/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WordCounterPro/Preview Content\"";
 				DEVELOPMENT_TEAM = M4NBPP9456;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -313,8 +389,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kn.WorldCounterPro;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kn.WordCounterPro;
+				PRODUCT_NAME = WordCounterPro;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		80E40516272C6AF000B58EC0 /* Build configuration list for PBXProject "WorldCounterPro" */ = {
+		80E40516272C6AF000B58EC0 /* Build configuration list for PBXProject "WordCounterPro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80E40527272C6AF300B58EC0 /* Debug */,
@@ -333,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80E40529272C6AF300B58EC0 /* Build configuration list for PBXNativeTarget "WorldCounterPro" */ = {
+		80E40529272C6AF300B58EC0 /* Build configuration list for PBXNativeTarget "WordCounterPro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80E4052A272C6AF300B58EC0 /* Debug */,
